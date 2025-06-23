@@ -1790,3 +1790,23 @@ img { height: auto; }
 
   :is(.course, .blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
 }
+
+
+.container,.container-xxl{
+    width:100%;
+    padding-right:var(--bs-gutter-x, .75rem);
+    padding-left:var(--bs-gutter-x, .75rem);
+    margin-right:auto;
+    margin-left:auto
+}
+@media (min-width: 576px){
+    .container{
+        max-width:540px
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width:720px
+    }
+}
+@media (min-width: 992px){.container,.container-sm,.container-md,.container-lg{max-width:960px}}@media (min-width: 1200px){.container,.container-sm,.container-md,.container-lg,.container-xl{max-width:1140px}}@media (min-width: 1400px){.container,.container-xxl{max-width:1320px}}
