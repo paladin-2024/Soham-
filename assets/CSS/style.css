@@ -901,61 +901,78 @@ color:var(--first-color);
 }
 
 
-.contact__card {
+.Contact_socials {
+    margin-top: 30px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1.25rem 0.75rem;
 }
 
-.contact__card-box {
+.contact_socials-box {
 	background-color: var(--body-color);
-	border: 2px solid var(--border-color);
+	border: 2px solid var(--text-color-light);
 	padding: 1.25rem 0.75rem;
 	border-radius: 0.5rem;
 	transition: all 0.3s ease;
 }
 
-.contact__card-info {
+.contact_socials-info {
 	display: flex;
 	align-items: center;
 	column-gap: 0.75rem;
 	margin-bottom: 1.25rem;
 }
 
-.contact__card i {
+.socials-icon {
 	padding: 6px;
-	background-color: var(--first-color-lighten);
+	background-color: var(--first-color-alt);
 	font-size: 1.25rem;
 	border-radius: 6px;
-	color: var(--first-color);
+	color: var(--text-color-light);
 }
 
-.contact__card-title {
+.contact_socials-title {
 	font-size: var(--normal-font-size);
 	font-weight: var(--font-semi-bold);
 	margin-bottom: 0.2rem;
 }
 
-.contact__card-description {
+.contact_socials-description {
 	font-size: var(--small-font-size);
 }
 
-.contact__card-button {
+.button {
+	display: inline-block;
+	background: var(--button-n-container-color);
+	color: #fff;
+	padding: 14px 28px;
+	border-radius: 5rem;
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-medium);
+	transition: 0.3s all ease-in-out;
+}
+
+button:hover {
+	background: var(--button-n-container-color-alt);
+	box-shadow: 0 4px 12px hsla(228 66%, 45%, 0.25);
+}
+
+.contact_socials-button {
 	font-size: var(--small-font-size);
 	padding: 14px 0;
 	width: 100%;
-	background: var(--first-color-lighten);
-	color: var(--first-color);
+	background: var(--first-color-alt);
+	color: white;
 	font-weight: var(--font-semi-bold);
 	box-shadow: none;
 }
 
-.contact__card-button:hover {
+.contact_socials-button:hover {
 	background-color: var(--first-color);
 	color: #fff;
 }
 
-.contact__card-box:hover {
+.contact_socials-box:hover {
 	box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.04);
 }
 
