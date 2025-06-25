@@ -686,6 +686,33 @@ color: var(--first-color);
   text-align: center;
 }
 
+.video__description{
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+}
+
+.video__content{
+  position: relative;
+  border-radius: 1.25rem;
+  border: 5px solid var(--first-color-alt);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video__button{
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: hsla(228, 66%, 53%, 0.687);
+  color: #fff;
+}
+
 /*----motto Section--*/
 .motto__container {
 background-color: var(--text-color-light);
