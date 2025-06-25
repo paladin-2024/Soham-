@@ -1364,9 +1364,11 @@ background-color: var(--first-color);
     max-width: 550px;
   }
 
-  .Contact_socials{
-    display: none;
-  }
+  .Contact_socials {
+		grid-template-columns: repeat(1, 200px);
+		justify-content: center;
+	}
+
 }
 
 
