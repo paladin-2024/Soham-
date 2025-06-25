@@ -45,30 +45,7 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*===============Video section ===============*/
-const videoFile = document.getElementById("video-file");
-videoButton = document.getElementById("video-button");
-videoIcon = document.getElementById("video-icon");
 
-function playPause() {
-    if (videoFile.paused) {
-        videoFile.play();
-        videoIcon.classList.add("ri-pause-line");
-        videoIcon.classList.remove("ri-play-line");
-    } else {
-        videoFile.pause();
-        videoIcon.classList.add("ri-play-line");
-        videoIcon.classList.remove("ri-pause-line");
-    }
-}
-videoButton.addEventListener("click", playPause);
-
-function finalVideo(){
-    videoIcon.classList.remove("ri-pause-line");
-    videoIcon.classList.add("ri-play-line");
-}
-
-videoFile.addEventListener("ended", finalVideo);
 
 
 
@@ -128,6 +105,31 @@ readMoreBtn.addEventListener("click",(e)=>{
         readMoreBtn.innerText = "READ MORE";
     }
 });
+
+/*===============Video section ===============*/
+const videoFile = document.getElementById("video-file");
+videoButton = document.getElementById("video-button");
+videoIcon = document.getElementById("video-icon");
+
+function playPause() {
+    if (videoFile.paused) {
+        videoFile.play();
+        videoIcon.classList.add("ri-pause-line");
+        videoIcon.classList.remove("ri-play-line");
+    } else {
+        videoFile.pause();
+        videoIcon.classList.add("ri-play-line");
+        videoIcon.classList.remove("ri-pause-line");
+    }
+}
+videoButton.addEventListener("click", playPause);
+
+function finalVideo(){
+    videoIcon.classList.remove("ri-pause-line");
+    videoIcon.classList.add("ri-play-line");
+}
+
+videoFile.addEventListener("ended", finalVideo);
 
 //programs
 $('.causes-progress').waypoint(function () {
