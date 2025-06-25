@@ -1365,7 +1365,7 @@ background-color: var(--first-color);
   }
 
   .Contact_socials {
-		grid-template-columns: repeat(1, 200px);
+		grid-template-columns: repeat(1, 300px);
 		justify-content: center;
 	}
 
