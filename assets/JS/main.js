@@ -45,7 +45,23 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*===============about section ===============*/
+/*===============Video section ===============*/
+const videoFile = document.getElementById("video-file");
+videoButton = document.getElementById("video-button");
+videoIcon = document.getElementById("video-icon");
+
+function playPause() {
+    if (videoFile.paused) {
+        videoFile.play();
+        videoIcon.classList.add("ri-pause-line");
+        videoIcon.classList.remove("ri-play-line");
+    } else {
+        videoFile.pause();
+        videoIcon.classList.add("ri-play-line");
+        videoIcon.classList.remove("ri-pause-line");
+    }
+}
+videoButton.addEventListener("click", playPause);
 
 
 

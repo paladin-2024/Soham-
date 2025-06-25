@@ -694,12 +694,16 @@ color: var(--first-color);
 
 .video__content{
   position: relative;
-  border-radius: 1.25rem;
-  border: 3px solid var(--first-color-alt);
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.video__content video{
+   border-radius: 1.25rem;
+  border: 3px solid var(--first-color-alt);
 }
 
 .video__button{
