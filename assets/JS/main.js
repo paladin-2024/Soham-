@@ -44,11 +44,6 @@ function scrollActive() {
     });
 }
 window.addEventListener("scroll", scrollActive);
-
-
-
-
-
 /*===============values section ===============*/
 
 const accordionItems = document.querySelectorAll(".values__accordion-item");
@@ -95,6 +90,8 @@ var spinner = function () {
 };
 spinner();
 
+/*=============== READ MORE BTN ===============*/
+
 const readMoreBtn=document.querySelector(".read-more-btn");
 const description=document.querySelector(".about__description");
 readMoreBtn.addEventListener("click",(e)=>{
@@ -131,7 +128,33 @@ function finalVideo(){
 
 videoFile.addEventListener("ended", finalVideo);
 
-//programs
+// Email validation
+function sendEmail() {
+    (function(){
+        emailjs.init(); //Account Public_Key
+    })();
+
+    var serviceID = ""; // Email service ID
+    var templateID = ""; // Email template ID
+
+    var params = {
+        senderFirstName: document.querySelector("#firstName").value,
+        senderLastName: document.querySelector("#lastName").value,
+        senderCountry: document.querySelector("#country").value,
+        senderPhone: document.querySelector("#phone").value,
+        senderEmail: document.querySelector("#email").value,
+        senderSubject: document.querySelector("#subject").value,
+        senderMessage: document.querySelector("#message").value
+    };
+
+    emailjs.send(serviceID, templateID, params)
+    .then( res => {
+        alert("Thank you," + params["senderFirstName"] + "! Your message has been sent successfully.");
+    })
+    .catch();
+}
+
+// programs section
 $('.causes-progress').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
