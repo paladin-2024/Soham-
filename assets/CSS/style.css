@@ -1021,22 +1021,6 @@ button:hover {
 
 
 
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .contact-container {
-    flex-direction: column;
-  .contact-form-box,
-  .contact-map-box {
-    max-width: 100%;
-    min-width: 0;
-  }
-  .contact-form .form-row {
-    flex-direction: column;
-    gap: 0;
-  }
-}
-
-
 
 
 /*----footer section----*/
