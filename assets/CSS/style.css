@@ -680,6 +680,12 @@ color: var(--first-color);
     transform: rotate(45deg);
 }
 
+/*--Video Section--*/
+
+.video h2{
+  text-align: center;
+}
+
 /*----motto Section--*/
 .motto__container {
 background-color: var(--text-color-light);
