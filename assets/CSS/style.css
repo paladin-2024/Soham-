@@ -1363,6 +1363,11 @@ background-color: var(--first-color);
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     max-width: 550px;
   }
+
+  .Contact_socials{
+    grid-template-columns: repeat(2, 192px);
+		justify-content: center;
+  }
 }
 
 
