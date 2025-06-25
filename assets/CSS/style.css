@@ -1271,40 +1271,13 @@ background-color: var(--first-color);
 
 }
 
-@media screen and (max-width: 400px) {
-    .contact-container {
-    padding: 0 2.5rem;
-  }
-  .contact-form-box,
-  .contact-map-box {
-    max-width: 480px;
-    padding: 32px 28px;
-  }
-  .contact-title,
-  .map-title {
-    font-size: var(--fs-4, 1.8rem);
-  }
-  .contact-form .form-row {
-    flex-wrap: nowrap;
-    gap: 16px;
-  }
-  .map-responsive {
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    max-width: 550px;
-  }
 
-  .Contact_socials {
-		grid-template-columns: repeat(1, 300px);
-		justify-content: center;
-	}
-  
-}
 
 
 
 /* For Medium Devices */
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 390px) {
 .mission__container {
     padding: 2.5rem;
 }
@@ -1392,7 +1365,10 @@ background-color: var(--first-color);
     max-width: 550px;
   }
 
-  
+  .Contact_socials {
+		grid-template-columns: repeat(1, 300px);
+		justify-content: center;
+	}
 
 }
 
