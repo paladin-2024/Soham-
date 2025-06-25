@@ -1252,6 +1252,10 @@ background-color: var(--first-color);
   }
 
   
+  .Contact_socials {
+		grid-template-columns: repeat(1, 240px);
+		justify-content: center;
+	}
 }
 
 

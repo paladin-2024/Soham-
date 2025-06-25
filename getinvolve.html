@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>SOHAM|Smile of hope</title>
-    <link rel="shortcut icon" href="" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/Images/logo-light.png" type="image/x-icon">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -14,9 +13,10 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <!-- EmailJS link -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- CSS links -->
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link rel="shortcut icon" href="./assets/Images/logo-light.png" type="image/x-icon">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -110,8 +110,6 @@
                 </div>
             </div>
         </section>
-        
-
     <!-- Contact-Form Section -->
     
         <section class="section contact-section" id="contact">
@@ -159,7 +157,7 @@
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary contact-btn">Send Message</button>
+                    <button type="submit" class="btn btn-primary contact-btn" onclick="sendMessage()">Send Message</button>
                 </form>
                 </div>
                 <div class="contact-map-box">
