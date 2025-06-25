@@ -1025,9 +1025,6 @@ button:hover {
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
-    align-items: stretch;
-    gap: 24px;
-  }
   .contact-form-box,
   .contact-map-box {
     max-width: 100%;
