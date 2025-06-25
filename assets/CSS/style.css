@@ -695,7 +695,7 @@ color: var(--first-color);
 .video__content{
   position: relative;
   border-radius: 1.25rem;
-  border: 5px solid var(--first-color-alt);
+  border: 3px solid var(--first-color-alt);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -703,7 +703,6 @@ color: var(--first-color);
 }
 
 .video__button{
-  border-radius: 50%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -711,6 +710,11 @@ color: var(--first-color);
   padding: 1rem;
   background-color: hsla(228, 66%, 53%, 0.687);
   color: #fff;
+  border-radius: 50%;
+}
+
+.video__button-icon{
+  font-size: 1.6rem;
 }
 
 /*----motto Section--*/
