@@ -704,6 +704,7 @@ color: var(--first-color);
 .video__content video{
    border-radius: 1.25rem;
   border: 3px solid var(--first-color-alt);
+  width: 100rem;
 }
 
 .video__button{
