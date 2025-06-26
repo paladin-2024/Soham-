@@ -129,30 +129,32 @@ function finalVideo(){
 videoFile.addEventListener("ended", finalVideo);
 
 // Email validation
-function sendEmail() {
-    (function(){
-        emailjs.init(); //Account Public_Key
-    })();
-
-    var serviceID = ""; // Email service ID
-    var templateID = ""; // Email template ID
+function sendMessage() {
 
     var params = {
-        senderFirstName: document.querySelector("#firstName").value,
-        senderLastName: document.querySelector("#lastName").value,
-        senderCountry: document.querySelector("#country").value,
-        senderPhone: document.querySelector("#phone").value,
-        senderEmail: document.querySelector("#email").value,
-        senderSubject: document.querySelector("#subject").value,
-        senderMessage: document.querySelector("#message").value
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        country: document.getElementById("country").value,
+        phone: document.getElementById("phone").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
     };
+
+    const serviceID = "service_gj7kgie"; // Email service ID
+    const templateID = "template_e545zg2"; // Email template ID
 
     emailjs.send(serviceID, templateID, params)
     .then( res => {
-        alert("Thank you," + params["senderFirstName"] + "! Your message has been sent successfully.");
+        document.getElementById("FirstName").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Thank you," + params["firstName"] + "! Your message has been sent successfully.");
     })
-    .catch();
+    .catch(err=>console.log(err));
 }
+
 
 // programs section
 $('.causes-progress').waypoint(function () {
