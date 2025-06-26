@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/CSS/style.css">
 
     <!-- Email JS links -->
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <script type="text/javascript" src="./assets/JS/validation.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" ></script>
     <script type="text/javascript">
@@ -37,14 +38,14 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a  href='./index.html' class='nav__link' >Home</a>
+                        <a class='nav__link' href='/'>Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="./about.html" class="nav__link">About <i class="ri-arrow-down-s-fill"></i></a>
+                        <a href="#" class="nav__link">About <i class="ri-arrow-down-s-fill"></i></a>
                         <ul class="dropdown">
-                            <li><a href='/about#about'>Who are we?</a></li>
-                            <li><a href='/about#mission'>Mission</a></li>
-                            <li><a href='/about#values'>Core Values</a></li>
+                            <li><a href='./about.html#about'>Who are we?</a></li>
+                            <li><a href='./about.html#mission'>Mission</a></li>
+                            <li><a href='./about.html#values'>Core Values</a></li>
                         </ul>
                     </li>
                     <li class="nav__item">
@@ -122,7 +123,7 @@
 
         <section class="section contact-section" id="contact">
             <div class="container contact-container">
-                <div class="contact-form-box">
+                <div class="contact-form-box" method="POST">
                     <h2 class="contact-title">Get in Touch</h2>
                     <div class="contact-form">
                         <div class="form-row">
@@ -165,6 +166,10 @@
                             <label for="message">Your Message</label>
                             <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
                         </div>
+                    
+                            <div class="h-captcha" data-sitekey="2a2a8eec-6942-436a-a1e2-f7b24d184502"></div>
+                            
+                        
                         <button type="submit" class="btn btn-primary" onclick="sendMail()">Send Message</button>
                     </div>
                     </div>
