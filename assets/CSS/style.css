@@ -895,6 +895,7 @@ color:var(--first-color);
   outline: none;
 }
 
+
 .contact-btn {
   background: var(--first-color-alt, #1a237e);
   color: var(--body-color, #fff);
@@ -911,7 +912,8 @@ color:var(--first-color);
 }
 
 .contact-btn:hover {
-  background: #3949ab;
+	background: var(--first-color-alt);
+	box-shadow: 0 4px 12px hsla(228 66%, 45%, 0.25);
 }
 
 .map-responsive {
